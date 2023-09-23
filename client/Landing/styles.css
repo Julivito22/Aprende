@@ -1,0 +1,226 @@
+@charset "UTF-8";
+header {
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute; /* Texto posicionado absolutamente dentro del contenedor relativo */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa todo el alto del contenedor */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  margin-top: 10%;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+.text-container {
+  position: absolute;
+  bottom: 50%;
+  left: 20%;
+  padding: 20px; /* Ajusta el espaciado */
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+}
+
+/* Estilos para el texto */
+.large-text {
+  color: var(--support-white, #FFF);
+  font-family: "Source Sans Pro";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: justify;
+}
+
+.description-text {
+  color: var(--support-white, #FFF);
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: justify;
+  margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos específicos para las dos líneas de texto */
+.large-text .first-line {
+  display: block;
+}
+
+.large-text .second-line {
+  display: inline-block;
+  background-color: rgb(219, 15, 60);
+}
+
+.description-text .first-line {
+  display: block;
+}
+
+.description-text .second-line {
+  display: block;
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilos para la imagen de fondo */
+header .image-container img {
+  padding: 10px 0; /* Ajusta el padding según tu diseño */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Estilos para la barra superior blanca */
+.top-bar {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  background-color: white;
+  padding: 10px 0; /* Ajusta el padding según tu diseño */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Estilos para el logo en la barra blanca */
+.top-bar .logo img {
+  width: 205.946px; /* Ancho del logotipo */
+  height: 32px; /* Altura del logotipo */
+  /* Center el logo horizontalmente en la barra blanca */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilos para el contenido del overlay */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main-content {
+  color: var(--support-black, var(--colors-secondary-700, #1B2631));
+  text-align: center;
+  /* H2/Desktop/Bold */
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  margin-top: 5%;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas por fila */
+  gap: 20px; /* Espacio entre las columnas */
+  margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilos para cada columna */
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el contenido a la izquierda */
+  padding: 20px;
+}
+
+/* Estilos para el logo en cada columna */
+.column-logo {
+  /* Estilos para el logo, como tamaño y fondo */
+  margin-right: 10px;
+  margin-bottom: -10%;
+}
+
+/* Estilos para el contenido de cada columna (título y descripción) */
+.column-content {
+  color: var(--support-black, var(--colors-secondary-700, #1B2631));
+  /* H4/Bold */
+  font-family: Source Sans Pro;
+  font-size: 18px; /* Tamaño del título */
+  font-style: normal;
+  line-height: 22px;
+  align-self: stretch;
+}
+
+/* Estilos para el título en cada columna */
+.column-content h3 {
+  margin: 0;
+  padding-left: 15%;
+  padding-top: -30%;
+}
+
+/* Estilos para la descripción en cada columna */
+.column-content p {
+  font-size: 14px; /* Tamaño de la descripción */
+  margin: 0;
+  padding-left: 15%;
+  color: var(--support-light-black, #2E4053);
+}
+
+.main-contents {
+  color: var(--support-black, var(--colors-secondary-700, #1B2631));
+  text-align: center;
+  /* H2/Desktop/Bold */
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  margin-top: 0;
+  background: var(--support-blue-soft, #F1F4FB);
+  width: 1366px;
+  height: 1114px;
+  top: 1194px;
+  padding: 20px;
+  /* Establece una altura fija */
+  height: 300px; /* Puedes ajustar esta altura según tus necesidades */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-contents h3 {
+  color: var(--support-black, var(--colors-secondary-700, #1B2631));
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  margin-top: -5%;
+}
+
+.main-contents p {
+  color: var(--support-black, var(--colors-secondary-700, #1B2631));
+  text-align: center;
+  /* P1/Regular */
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0;
+}/*# sourceMappingURL=styles.css.map */
