@@ -1,0 +1,29 @@
+.filter-button {
+    padding: 6px 12px;
+    border-radius: 24px;
+    background: var(--support-blue-soft, #F1F4FB);
+    color:#1B2631;
+    margin-top: 4%;
+    color: var(--support-black, var(--colors-secondary-700, #1B2631));
+text-align: center;
+font-family: Source Sans Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px; 
+margin-right: 40px;
+  }
+  
+  .filter-button.active {
+   
+    background: rgba(12, 15, 61, 1); 
+    color: rgba(255, 255, 255, 1);
+  }
+
+  @media screen and (max-width: 768px) {
+    .filter-button {
+      font-size: 12px; 
+      padding: 4px 8px; 
+      margin-right: 20px; 
+    }
+  }
