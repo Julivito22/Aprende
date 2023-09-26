@@ -25,6 +25,7 @@ const ProductGrid = () => {
         if (data.results) {
           const productArray = Object.values(data.results);
           const filteredProducts = productArray.filter((product) => {
+            console.log(product);
             return Array.isArray(product.categories) && product.categories.length > 0;
           });
           setProducts(filteredProducts);
@@ -45,6 +46,14 @@ const ProductGrid = () => {
   //     itemCount: itemCount,
   //   };
   // });
+
+  const handleLoadMore = () => {
+    if (visibleProducts + 4 <= products.length) {
+      setVisibleProducts(visibleProducts + 4);
+    } else {
+      setVisibleProducts(products.length); // Evitar mostrar más productos de los disponibles
+    }
+  };
   
   return (
     <div className="product-grid">
@@ -69,7 +78,7 @@ const ProductGrid = () => {
           </div>
         ))}
       {visibleProducts < products.length && (
-        <button className="load-more" onClick={() => setVisibleProducts(visibleProducts + 4)}>
+        <button className="load-more" onClick={handleLoadMore}>
           Cargar más
         </button>
       )}
