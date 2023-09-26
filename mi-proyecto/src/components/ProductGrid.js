@@ -17,7 +17,6 @@ const ProductGrid = () => {
   const [visibleProducts, setVisibleProducts] = useState(4);
 
   useEffect(() => {
-    // Realiza la llamada al endpoint para obtener los datos de productos
     fetch('https://staging.aprende.dev/wp-json/aprende/v2/content/product-pages?posts_per_page=-1')
       .then((response) => response.json())
       .then((data) => {
@@ -51,7 +50,7 @@ const ProductGrid = () => {
     if (visibleProducts + 4 <= products.length) {
       setVisibleProducts(visibleProducts + 4);
     } else {
-      setVisibleProducts(products.length); // Evitar mostrar más productos de los disponibles
+      setVisibleProducts(products.length); 
     }
   };
   
