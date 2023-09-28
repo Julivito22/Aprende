@@ -6,13 +6,16 @@
     <title>Mi Landing Page</title>
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
-    <script> src="/mi-proyecto/src/components/ProductGrid.js"</script>
+    
+    
 
 </head>
 <body>
-   
+    
+    <!-- <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="/mi-proyecto/src/components/ProductGrid.js"></script>
+    -->
     <header>
         <div class="top-bar">
             <div class="logo">
@@ -22,80 +25,86 @@
             
         </div>
         <div class="image-overlay">
+            <img src="Hero.png" alt="landing" class="full-width-image">
+       
             
             <div class="large-text">
-                <div class="form-container">
-                    <form id="myForm" class="form">
-                        <div class="step step1">
-                            
-                            <h2>¡Recibe información de precios y becas!</h2>
-                            <p>Al recibir tu información, uno de nuestros asesores académicos se comunicará contigo.</p>
-                            <input type="text" name="nombre" placeholder="Nombre">
-                            <input type="text" name="apellido" placeholder="Apellido">
-                            <input type="email" name="email" placeholder="Correo Electrónico">
-                            <div class="contact-options">
-                                <label>
-                                    <input type="checkbox" name="contacto_wpp"> Recibe mensajes vía <img src="wpp.png" alt="WhatsApp" class="wpp"> WhatsApp y Sms sobre nuestros diplomados.
-                                </label>
-                                
-                            </div>
-                            <button class="next-step">Continuar</button>
-                            <div class="info">
-                                <p>Al hacer clic arriba, nos autoriza a contactarlo/a mediante un sistema automatizado de llamadas al teléfono indicado arriba con el fin de recibir información relevante sobre Aprende Institute, y usted acepta nuestros <u>Términos de servicio y Política de privacidad.</u> Su consentimiento no constituye una condición de compra.</p>
-                            </div>
-                        </div>
-                        <div class="step step2">
-                            <h2>¡Recibe información de precios y becas!</h2>
-                            <p>Al recibir tu información, uno de nuestros asesores académicos se comunicará contigo.</p>
-                            <div class="phone-input">
-                                <div class="country-dropdown">
-                                  
-                                  
-                                  <select name="codigo_pais" id="codigo_pais" class="custom-select">
-                                    <option value="ar">🇦🇷 +54 </option>
-                                    <option value="us">🇺🇸 +1 </option>
-                                    <option value="mx">🇲🇽 +52 </option>
-                                    
-                                </select>
-                                
-                                </div>
-                                <input type="tel" name="telefono" placeholder="+54 11 1234 1234">
-                            </div>
-                            <div class="input-with-arrow">
-                              <input type="text" name="area_interes" placeholder="Área de Interés">
-                              <div class="arrow-icon">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                      <path d="M5.5 8.25L11 13.75L16.5 8.25" stroke="#49515A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                  </svg>
-                              </div>
-                          </div>
-                            <div class="info">
-                              <div class="contact-options2">
-                                <label>
-                                    <input type="checkbox" name="contacto_wpp"> Recibe mensajes vía <img src="wpp.png" alt="WhatsApp" class="wpp"> WhatsApp y Sms sobre nuestros diplomados.
-                                </label>
-                                
-                            </div>
-                          </div>
-
-                            <button class="submit">Quiero hablar con un asesor</button>
-                            <div class="info2">
-                            <p>Al hacer clic arriba, nos autoriza a contactarlo/a mediante un sistema automatizado de llamadas al teléfono indicado arriba con el fin de recibir información relevante sobre Aprende Institute, y usted acepta nuestros <u>Términos de servicio y Política de privacidad.</u> Su consentimiento no constituye una condición de compra.</h3>
-                        </div>
-                        </div>
-                    </form>
-                </div>
+                
                 <span class="first-line">Diplomado en</span>
                 <span class="second-line">Repostería Profesional</span>
             </div>
-            <div class="description-text">
-                <span class="first-line">Aprende todo sobre este maravilloso mundo, desde el uso adecuado de harinas, hasta la</span>
-                <span class="second-line">preparación de cremas y natillas.</span>
+                <div class="fondo">
+                <span class="second-line">Repostería Profesional</span>
+            </div>
+                
+            
+            <div class="form-container">
+                <div class="description-text">
+                    <span class="first-line">Aprende todo sobre este maravilloso mundo, desde el uso adecuado de harinas, hasta la</span>
+                    <span class="second-line">preparación de cremas y natillas.</span>
+                
+            </div>
+                <form id="myForm" class="form">
+                    <div class="step step1">
+                        
+                        <h2>¡Recibe información de precios y becas!</h2>
+                        <p>Al recibir tu información, uno de nuestros asesores académicos se comunicará contigo.</p>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                        <input type="text" name="apellido" placeholder="Apellido">
+                        <input type="email" name="email" placeholder="Correo Electrónico">
+                        <div class="contact-options">
+                            <label>
+                                <input type="checkbox" name="contacto_wpp"> Recibe mensajes vía <img src="wpp.png" alt="WhatsApp" class="wpp"> WhatsApp y Sms sobre nuestros diplomados.
+                            </label>
+                            
+                        </div>
+                        <button class="next-step">Continuar</button>
+                        <div class="info">
+                            <p>Al hacer clic arriba, nos autoriza a contactarlo/a mediante un sistema automatizado de llamadas al teléfono indicado arriba con el fin de recibir información relevante sobre Aprende Institute, y usted acepta nuestros <u>Términos de servicio y Política de privacidad.</u> Su consentimiento no constituye una condición de compra.</p>
+                        </div>
+                    </div>
+                    <div class="step step2">
+                        <h2>¡Recibe información de precios y becas!</h2>
+                        <p>Al recibir tu información, uno de nuestros asesores académicos se comunicará contigo.</p>
+                        <div class="country-input-container">
+                            <div class="phone-input">
+                                <div class="country-dropdown">
+                                    <select name="codigo_pais" id="codigo_pais" class="custom-select">
+                                        <option value="ar">🇦🇷 +54</option>
+                                        <option value="us">🇺🇸 +1</option>
+                                        <option value="mx">🇲🇽 +52</option>
+                                    </select>
+                                </div>
+                                <input type="tel" name="telefono" placeholder="+54 11 1234 1234">
+                            </div>
+                        <div class="input-with-arrow">
+                          <input type="text" name="area_interes" placeholder="Área de Interés">
+                          <div class="arrow-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                  <path d="M5.5 8.25L11 13.75L16.5 8.25" stroke="#49515A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                          </div>
+                        </div>
+                      </div>
+                        <div class="info">
+                          <div class="contact-options2">
+                            <label>
+                                <input type="checkbox" name="contacto_wpp"> Recibe mensajes vía <img src="wpp.png" alt="WhatsApp" class="wpp"> WhatsApp y Sms sobre nuestros diplomados.
+                            </label>
+                            
+                        </div>
+                      </div>
+
+                        <button class="submit">Quiero hablar con un asesor</button>
+                        <div class="info2">
+                        <p>Al hacer clic arriba, nos autoriza a contactarlo/a mediante un sistema automatizado de llamadas al teléfono indicado arriba con el fin de recibir información relevante sobre Aprende Institute, y usted acepta nuestros <u>Términos de servicio y Política de privacidad.</u> Su consentimiento no constituye una condición de compra.</h3>
+                    </div>
+                    </div>
+                </form>
             </div>
         </div>
-        <img src="Hero.png" alt="landing" class="full-width-image">
+        
     </header>
-
     
 
     
@@ -191,6 +200,7 @@
           <p>Usamos la tecnología a tu favor para que avances fácilmente en todos los contenidos de nuestros diplomados, siempre con </p>
           <p>el acompañamiento de un docente experto. ¿A cuál escuela quieres unirte?</p>
           <div id="root" >
+            
           </div>
 
           
@@ -275,6 +285,7 @@
                     
                 </section>
     </footer>
+    
     
 </body>
 </html>
