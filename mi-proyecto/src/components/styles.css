@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .filter-button {
   flex: 1;
   padding: 0.375rem 0.75rem; /* 6px 12px */
@@ -19,4 +20,10 @@
 .filter-button.active {
   background: rgb(12, 15, 61);
   color: rgb(255, 255, 255);
+}
+
+@media (min-width: 768px) {
+  .filter-button {
+    grid-template-columns: repeat(6, 1fr); /* Elimina el ancho máximo en pantallas de escritorio */
+  }
 }/*# sourceMappingURL=styles.css.map */

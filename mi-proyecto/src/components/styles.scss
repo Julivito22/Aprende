@@ -14,12 +14,20 @@
   max-width: calc(33.33% - 20px); /* Ancho de columna de 3 botones con espacios */
   transition: background-color 0.3s, color 0.3s; 
   
+  
 }
 
 /* Estilos para .filter-button activo */
 .filter-button.active {
   background: rgba(12, 15, 61, 1);
   color: rgba(255, 255, 255, 1);
-}
+   }
+
+  @media (min-width: 768px) {
+    .filter-button {
+      
+      grid-template-columns: repeat(6, 1fr) ; /* Elimina el ancho máximo en pantallas de escritorio */
+    }
+  }
 
 
