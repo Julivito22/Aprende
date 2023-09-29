@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
             setTimeout(function () {
                 step2.style.opacity = '1';
             }, 100); // Puedes ajustar el tiempo de transición aquí
-        }, 500); // Puedes ajustar el tiempo de transición aquí
+        }, 100); // Puedes ajustar el tiempo de transición aquí
     });
 });
 
