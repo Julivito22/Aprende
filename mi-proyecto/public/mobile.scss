@@ -83,9 +83,9 @@ flex-shrink: 0;
     }
 
     .top-bar .logo img {
-        max-width: 205.946px; /* Ancho máximo del logo */
-        height: auto; /* Permite que la altura se ajuste automáticamente */
-        margin: 0 auto; /* Centra horizontalmente el logo */
+        max-width: 205.946px;
+        height: auto; 
+        margin: 0 auto; 
         align-items: center;
         display: center;
     }
@@ -447,8 +447,8 @@ gap: 30px;
 
     .columns {
         display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 80px; /* Espaciado entre columnas y filas */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 80px; 
     text-align: center;
     margin-left: 10%;
     margin-top: 5%;
@@ -486,7 +486,7 @@ gap: 30px;
     
     
     .column-content h3 {
-        white-space: nowrap; /* Evita el salto de línea en h3 */
+        white-space: nowrap; 
         overflow: hidden;
         text-overflow: ellipsis;
         color: var(--support-black, var(--colors-secondary-700, #1B2631));
@@ -952,7 +952,7 @@ input[name="area_interes"] {
 .image-overlay {
     position: relative;
     display: flex;
-    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    justify-content: flex-end; 
     
 }
 
@@ -961,9 +961,6 @@ input[name="area_interes"] {
 
      }
 
-    
-
-/* Estilos para el formulario */
 .form {
     display: flex;
     width: 400px;
@@ -973,11 +970,7 @@ input[name="area_interes"] {
     gap: 21px;
     margin-top: -80%;
     margin-left: 60%;
-    
-
-   
-    
-}
+    }
 
 .fondo {
     display: none;
